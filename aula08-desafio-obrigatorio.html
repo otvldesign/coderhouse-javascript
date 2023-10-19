@@ -13,7 +13,7 @@
                 
                 if (dias < 0) {
                     meses--;
-                    dias += 30; // Supondo que um mês tem 30 dias
+                    dias += 30; 
                 }
                 
                 if (meses < 0) {
@@ -24,7 +24,7 @@
                 return { anos: anos, meses: meses, dias: dias };
             }
 
-            // Exemplo de uso:
+           
             const idade = calcularIdade(1990, 5, 15);
             console.log("Idade: " + idade.anos + " anos, " + idade.meses + " meses e " + idade.dias + " dias");
         </script>
