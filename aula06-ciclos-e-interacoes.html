@@ -1,3 +1,65 @@
 <html>
+    <head>
+        <script>
+            //exibir números de 0 a 9. 
+            //inicio, condição, atualização. 
+            //i++ mesmo que i = i+1
+            console.log("Contar de 1 a 9;")
+            for (let i = 0; i < 10; i++){
+                console.log(i)
+            }
+
+            console.log("Contar de 1 a 10;")
+            //contar de 1 a 10.
+            for(let i =1; i <=10; i++){
+                console.log(i)
+            }
+
+            //tabuada
+            console.log("Tabuada")
+
+            //solicitamos um valor para o unsuario.
+            let numero = parseInt(prompt("Insira um número"))
+
+            for(let i = 1; i <=10; i++){
+                let resultado = numero * i;
+                console.log(numero + " X " + i + " = " + resultado)
+            }
+
+            //encontre o bug
+            console.log("Encontre o BUG")
+            let numeroBUG = perseInt(prompt("Inserir Número"));
+            
+            function produtorio(numeroBUG){
+                let resultado = 1 ;
+                for (let i = 1; i <= numeroBUG; i++){
+                    resultado = resultado * i; //Multiplica resultado por i
+                }
+                console.log("Produtorio de " + numeroBUG + " = " + resultado);
+            }
+
+            produtorio(numeroBUG);
+
+            //pratica em sala
+
+            console.log("Pratica em sala:")
+
+            let numeroMenor(numeroMenor)
+
+            function exibirNumeroMenor(numero){
+
+                if(numeroMenor < 1 || numeroMenor > 10)
+                {
+                    console.log("Número fora do intervalo de 1 a 10.")
+                    return
+                }
+
+                for(let i = 1; i < numeroMenor; i++){
+                    console.log(i)
+                }      
+            }
+
+        </script>
+    </head>
     
 </html>

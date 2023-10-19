@@ -1,5 +1,32 @@
 <html>
-    <script type="javascript">
+    <head>
+        <script>  
+            function calcularIdade(anoNascimento, mesNascimento, diaNascimento) {
+                const dataAtual = new Date();
+                const anoAtual = dataAtual.getFullYear();
+                const mesAtual = dataAtual.getMonth() + 1;
+                const diaAtual = dataAtual.getDate();
+                
+                let anos = anoAtual - anoNascimento;
+                let meses = mesAtual - mesNascimento;
+                let dias = diaAtual - diaNascimento;
+                
+                if (dias < 0) {
+                    meses--;
+                    dias += 30; // Supondo que um mês tem 30 dias
+                }
+                
+                if (meses < 0) {
+                    anos--;
+                    meses += 12;
+                }
+                
+                return { anos: anos, meses: meses, dias: dias };
+            }
 
-    </script> 
+            // Exemplo de uso:
+            const idade = calcularIdade(1990, 5, 15);
+            console.log("Idade: " + idade.anos + " anos, " + idade.meses + " meses e " + idade.dias + " dias");
+        </script>
+    </head> 
 </html>
